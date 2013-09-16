@@ -9,7 +9,6 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
 html,
 button,
 input,
@@ -19,6 +18,7 @@ textarea {
 }
 
 body {
+    -webkit-font-smoothing: antialiased !important; 
     font-size: 1em;
     line-height: 1.4;
 }
@@ -92,9 +92,110 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.AllContents {
+    width: 100%;
+    position: absolute;
+    display: inline;
+    z-index: 3;
+}
+.overlayMenuClass{
+    width: 100%;
+    display: inline-block;
+    position: fixed;
+    z-index: 5;
+}
+
+.faceicon
+{
+    /* Positioning */
+    background-image: url("assets/facebook_icon.png");
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.LangMenu li
+{
+    float: left;
+    margin: 0px;
+    padding: 1px;
+    /* Positioning */
+    display: inline-block;
+    vertical-align: top;
+    position: relative
+    
+}
+.LangMenu ul
+{
+    width: auto;
+    float: right;
+    margin: 10px;
+    margin-right: 10px;
+}
 
 
-
+.LangMenu {
+    margin-right: 150px;
+    background-color: #ffffff;
+    width:247px;
+    height:40px;
+    float: right;
+    filter:alpha(opacity=100);
+    opacity: .6;
+}
+.LangMenu {
+    margin-right: 46px;
+    background-color: #ffffff;
+    width:247px;
+    height:40px;
+    float: right;
+    filter:alpha(opacity=100);
+    opacity: .6;
+}
+.leftMenu li
+{
+    font-weight: bold;
+    margin: 0px;
+    padding: 1px;
+    /* Positioning */
+    display: inline-block;
+    vertical-align: top;
+    position: relative
+    
+}
+.leftMenu ul
+{
+    margin-top: 25px;
+    text-align: center;
+    -webkit-padding-start: 0px;
+    width: auto;
+    float: right;
+    margin: 10px;
+    margin-right: 10px;
+}
+.leftMenu {
+    width:185px;
+    height:210px;
+    display: block;
+    background-color: #ffffff;
+    float: left;
+    filter:alpha(opacity=100);
+    opacity: .6;
+    margin-top:56px;
+}
+.svgelement {
+    width: 100%;
+    height: 90%;
+    display: block;
+}
+.areaContent {
+    width: 100%;
+    height: 90%;
+    position: relative;
+}
 
 
 

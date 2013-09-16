@@ -14,20 +14,171 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+
+
+        <link rel="stylesheet" href="fonts/gothamrnd-bold.css">
+        <link rel="stylesheet" href="fonts/gothamrnd-light.css">
+        <!-- CSS AREAS SITE -->
+        <link rel="stylesheet" href="css/entrence.css">
+        <link rel="stylesheet" href="css/quemsomos.css">
+        <!-- END CSS AREAS SITE -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/welcomeScreen.js"></script>
     </head>
-    <body>
+    <body  onload="engine.onLoad()">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div id="overLayMenu" class="overlayMenuClass">
+            <div class="LangMenu">
+                <img src="assets/facebook_icon.png" class="faceicon">
+                <ul>
+                    <li>PT</li>
+                    <li>EN</li>
+                    <li>FR</li>
+                    <li>DE</li>
+                    <li>AR</li>
+                    <li>ES</li>
+                    <li>IT</li>
+                    <li>CH</li>
+                </ul>
+            </div>
+            <div class="leftMenu">
+                <ul>
+                    <li><a href="#QuemSomos">QUEM SOMOS</a></li>
+                    <li>O QUE FAZEMOS</li>
+                    <li>PARCERIAS</li>
+                    <li>PEDIDO DE ORÇAMENTO</li>
+                    <li>CONTACTOS</li>
+                    <li>COLABORADORES</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="AllContents">
+            <div class="WelcomeScreen">
+                <img src="img/laranja.svg" class="svgelement_notvisible">
+                 <img src="img/logogibberish.png" class="logoElement">
+                 <div class="relogios">
+                    <div id="newyork" class="watchgroup">
+                        <div class="relogio">
+                            <div class="grouppieces">
+                                <img src="img/base_relogio.png" class="base_relogio">
+                                <div id="hora" class="ponteiro">
+                                    <img src="img/ponteiro_horas.svg" class="ponteiro_hora">
+                                </div>
+                                <div id="minutos" class="ponteiro">
+                                    <img src="img/ponteiro_minutos.svg" class="ponteiro_minutos">
+                                </div>
+                                <div class="centrorelogio">
+                                    <img src="img/clockcenter.svg" class="centrowatch">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cidade">
+                                NEW YORK
+                        </div>
+                    </div>
+                    <div id="lisboa" class="watchgroup">
+                         <div class="relogio">
+                            <div class="grouppieces">
+                                <img src="img/base_relogio.png" class="base_relogio">
+                                <div id="hora" class="ponteiro">
+                                    <img src="img/ponteiro_horas.svg" class="ponteiro_hora">
+                                </div>
+                                <div id="minutos" class="ponteiro">
+                                    <img src="img/ponteiro_minutos.svg" class="ponteiro_minutos">
+                                </div>
+                                <div class="centrorelogio">
+                                    <img src="img/clockcenter.svg" class="centrowatch">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cidade">
+                                LISBOA
+                        </div>
+                    </div>
+                    <div id="tokyo" class="watchgroup">
+                         <div class="relogio">
+                            <div class="grouppieces">
+                                <img src="img/base_relogio.png" class="base_relogio">
+                                <div id="hora" class="ponteiro">
+                                    <img src="img/ponteiro_horas.svg" class="ponteiro_hora">
+                                </div>
+                                <div id="minutos" class="ponteiro">
+                                    <img src="img/ponteiro_minutos.svg" class="ponteiro_minutos">
+                                </div>
+                                <div class="centrorelogio">
+                                    <img src="img/clockcenter.svg" class="centrowatch">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cidade">
+                                TOKYO
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div id="QuemSomos" class="QuemSomos">
+                <img src="img/laranja.svg" class="svgelement_notvisible">
+                <div class="centraConteudo">
+                    <div class="titlePage">
+                        <div class="title">
+                            <div class="lineback"></div>
+                            <div class="textin">
+                                QUEM SOMOS
+                            </div>
+                             <div id="linedown" class="lineback"></div>
+                        </div>
+                        <div class="imagelogo">
+                        </div>
+                    </div>
+                    <div class="smalltxt_quemsomos">
+                        gib•ber•ish <div class="soundicon"></div> ['dZIbErIS]<br>
+                        s. <br>
+                        1. algaraviada incompreensível;<br>
+                        2. linguagem sem nexo;<br>
+                        3. a nossa empresa de serviços de tradução.
+                     </div>
+                     <div class="bigtxt_quemsomos">
+                        Fundada e gerida por três profissionais experientes empenhadas na prestação de um serviço de elevada qualidade. Gostamos da agilidade que uma estrutura leve e informal nos permite, mas não fazemos concessões na competência, no empenho, nem nas qualificações. Não gostamos de barreiras linguísticas e pretendemos derrubá-las. Não tememos as línguas exóticas, os prazos aper- tados, nem os assuntos complicados.
+                        <br><br>
+                        Por mais impossível que possa parecer o desafio, nós estamos interessadas!
+                     </div>
+                </div>
+            </div>
+            <div class="OqueFazemos">
+            </div>
+            <div class="Parcerias">
+            </div>
+            <div class="Orcamento">
+            </div>
+            <div class="Contactos">
+            </div>
+            <div class="Colaboradores">
+            </div>
+        </div>
+        <div class="BackGrounds">
+            <div class="areaContent">
+                 <img src="img/laranja.svg" class="svgelement">
+            </div>
+            <div class="areaContent">
+                <img src="img/laranja_screen2.svg" class="svgelement">
+            </div>
+            <div class="areaContent">
+                <img src="img/amarelo.svg" class="svgelement">
+            </div>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/greensock-v12-js/src/minified/TweenMax.min.js"></script>
+        <script src="js/greensock-v12-js/src/minified/plugins/CSSPlugin.min.js"></script>
+        <script src="js/greensock-v12-js/src/minified/easing/EasePack.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
