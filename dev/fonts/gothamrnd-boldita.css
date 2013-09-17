@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'GothamRoundedBoldItalic';
+    src: url('gothamrnd-boldita.eot');
+    src: url('gothamrnd-boldita.eot') format('embedded-opentype'),
+         url('gothamrnd-boldita.woff') format('woff'),
+         url('gothamrnd-boldita.ttf') format('truetype'),
+         url('gothamrnd-boldita.svg#GothamRoundedBoldItalic') format('svg');
+}
