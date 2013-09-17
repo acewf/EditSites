@@ -9,14 +9,15 @@
    Base styles: opinionated defaults
    ========================================================================== */
 .QuemSomos {
+    height: 90%;
     width: 100%;
-    height: 100%;
+    position: relative;
 }
 .QuemSomos .centraConteudo {
     display: inline-block;
-    position: relative;
+    position: absolute;
     left: 50%;
-    margin-top: -50%;
+    top: 50%;
     transform: translate(-50%, -50%);    
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);

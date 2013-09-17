@@ -2,6 +2,7 @@ var engine = new Object();
 var screenAreas = new Array();
 screenAreas.push('.WelcomeScreen')
 screenAreas.push('.QuemSomos')
+screenAreas.push('.oquefazemos')
 engine.hashchange =  function (argument) {
 	// body...
 	console.log(argument)
@@ -28,20 +29,19 @@ engine.onLoad = function(){
         
 		*/
 		var perc = window.pageYOffset/ ($(document.body).height()-window.innerHeight);
+		console.log($(document.body).height(),"##")
+		var limitValue = $(document.body).height()/2;//400;
+		var difValue = limitValue-100;
 
 		for (var i = screenAreas.length - 1; i >= 0; i--) {
 			var localValue = $(screenAreas[i]).position().top-window.pageYOffset; 
 			localValue = Math.sqrt(localValue*localValue)
 			//console.log(localValue,screenAreas[i]);
-			if (localValue>300) {
-				var limitValue = 400;
-				var parsevalue = (localValue-300);
-				if (parsevalue>400) {parsevalue=400};
-				console.log(parsevalue,screenAreas[i]);
-				var actualAlpha = 1-(parsevalue/limitValue);
-				//if(actualAlpha<0) actualAlpha=0; 
+			if (localValue>difValue) {
 				
-				console.log(actualAlpha,screenAreas[i]);
+				var parsevalue = (localValue-difValue);
+				if (parsevalue>limitValue) {parsevalue=limitValue};
+				var actualAlpha = 1-(parsevalue/limitValue);
 				$(screenAreas[i]).css({ 'opacity' : actualAlpha });
 			}  else {
 				$(screenAreas[i]).css({ 'opacity' : 1 });
