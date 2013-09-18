@@ -100,8 +100,8 @@ textarea {
     position: absolute;
     z-index: 3;
 }
-.BackGrounds{ 
-    
+.BackGrounds { 
+    height: 100%;
 }
 .overlayMenuClass{
     width: 100%;
@@ -193,12 +193,12 @@ textarea {
 }
 .svgelement {
     width: 100%;
-    height: 90%;
+    height: 100%;
     display: block;
 }
 .areaContent {
     width: 100%;
-    height: 100%;
+    height: 90%;
     position: relative;
 }
 

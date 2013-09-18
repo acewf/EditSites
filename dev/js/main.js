@@ -1,8 +1,9 @@
 var engine = new Object();
 var screenAreas = new Array();
-screenAreas.push('.WelcomeScreen')
-screenAreas.push('.QuemSomos')
-screenAreas.push('.oquefazemos')
+screenAreas.push('.WelcomeScreen');
+screenAreas.push('.QuemSomos');
+screenAreas.push('.oquefazemos');
+screenAreas.push('.parcerias');
 engine.hashchange =  function (argument) {
 	// body...
 	console.log(argument)
@@ -30,8 +31,10 @@ engine.onLoad = function(){
 		*/
 		var perc = window.pageYOffset/ ($(document.body).height()-window.innerHeight);
 		console.log($(document.body).height(),"##")
-		var limitValue = $(document.body).height()/2;//400;
+		var limitValue = $(document.body).height()/4;//400;
 		var difValue = limitValue-100;
+
+		console.log(difValue,":::::",limitValue);
 
 		for (var i = screenAreas.length - 1; i >= 0; i--) {
 			var localValue = $(screenAreas[i]).position().top-window.pageYOffset; 

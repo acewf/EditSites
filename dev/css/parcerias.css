@@ -8,12 +8,12 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-.QuemSomos {
+.parcerias {
     height: 90%;
     width: 100%;
     position: relative;
 }
-.QuemSomos .centraConteudo {
+.parcerias .centraConteudo {
     display: inline-block;
     position: absolute;
     left: 50%;
@@ -23,12 +23,12 @@
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
-.QuemSomos .centraConteudo .lineback{
+.parcerias .centraConteudo .lineback{
     height: 4px;
     width: 600px;
     background-repeat: no-repeat;
     background-size: 600px 4px;
-    background-image: url('../img/quemsomos/quemsomoslines.svg');
+    background-image: url('../img/parcerias/parceriaslines.svg');
     left: 0;
 }
 
@@ -39,7 +39,7 @@
 }
 
 
-.QuemSomos .centraConteudo .textin{
+.parcerias .centraConteudo .textin{
     color: #fff;
     font-family: 'GothamRoundedBold';
     font-size: 2em;
@@ -47,46 +47,34 @@
     width: 600px;
     padding: 14px;
 }
-.QuemSomos .centraConteudo .titlePage{
+.parcerias .centraConteudo .titlePage{
     height: 70px;
 }
-.QuemSomos .centraConteudo .smalltxt_quemsomos{
-    color: #fff;
-    font-family: 'GothamRoundedLight';
-    font-weight: normal;
-    font-size: 1em;
+.parcerias .centraConteudo .area_mapa{
     width: 600px;
     height: 100%;
-    margin-top: 30px;
-    font-smooth: always ;
 }
-.QuemSomos .centraConteudo .bigtxt_quemsomos{
-    color: #fff;
-    font-family: 'GothamRoundedLight';
-    font-weight: normal;
-    font-size: 1em;
-    width: 600px;
-    height: 100%;
-    margin-top: 30px;
-    font-smooth: always ;
-}
-.QuemSomos .centraConteudo .smalltxt_quemsomos .soundicon{
-    width: 18px;
-    height: 18px;
+.parcerias .centraConteudo .area_mapa .mapa{
+    margin-top: 35px;
+    margin-left: -20%;
+    width: 904px;
+    height: 454px;
     display: inline-block;
-    background-image: url('../img/quemsomos/sound.png');
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg); /* Safari and Chrome */
+    background-image: url('../img/parcerias/mapa.png');
 }
 
 
-.QuemSomos .centraConteudo .titlePage .title{
+.parcerias .centraConteudo .titlePage .title{
     float: left;
 }
-.QuemSomos .centraConteudo .imagelogo{
+.parcerias .centraConteudo .imagelogo{
     position: absolute;
     top: -50px;
     margin-left: 610px;
-    height: 122px;
-    width: 82px;
+    height: 112px;
+    width: 115px;
     background-repeat: no-repeat;
-    background-image: url('../img/quemsomos/Gbig.png');
+    background-image: url('../img/parcerias/logo_parcerias.png');
 }
