@@ -1,0 +1,101 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Pedro Martins // ace.wf.home@gmail.com.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+.oquefazemos {
+    font-family: 'GothamRoundedBold';
+    color: #fff;
+    height: 90%;
+    width: 100%;
+    position: relative;
+}
+.oquefazemos .centraConteudo {
+    max-width: 628px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.oquefazemos .centraConteudo .lineback{
+    height: 4px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: 600px 4px;
+    background-image: url('../img/oquefazemoslines.svg');
+    left: 0;
+}
+
+
+#linedown  {
+    position: relative;
+    bottom: 0;
+}
+
+
+.oquefazemos .centraConteudo .textin{
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    width: 600px;
+    padding: 14px;
+}
+.oquefazemos .centraConteudo .subtitle{
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+    width: 600px;
+    padding: 14px;
+}
+
+
+.oquefazemos .centraConteudo .titlePage{
+    height: 70px;
+}
+.oquefazemos .centraConteudo .titlePage .title{
+    float: left;
+}
+.oquefazemos .centraConteudo .imagelogo{
+    position: absolute;
+    top: -50px;
+    margin-left: 610px;
+    height: 121px;
+    width: 129px;
+    background-repeat: no-repeat;
+    background-image: url('../img/icon_oquefazemos.png');
+}
+
+.oquefazemos .centraConteudo .contentcontrol{
+    padding-top: 60px;
+    min-width: 778px;
+}
+.oquefazemos .centraConteudo .group_content .title{
+    padding-top: 60px;
+}
+.oquefazemos .centraConteudo .group_content .title ul li{
+    font-size: .8em;
+}
+.oquefazemos .centraConteudo .group_content{
+    vertical-align: top;
+    display: inline-block;
+    background-repeat:no-repeat;
+    background-image: url('../img/oquefazemos/icon_lapis.png');
+}
+.oquefazemos .centraConteudo .certificado{
+    margin-left: -50px;
+    font-size: .8em;
+    padding-left: 50px;
+    margin-top: 30px;
+    display: inline-block;
+    background-repeat:no-repeat;
+    background-image: url('../img/oquefazemos/icon_selo.png');
+}
