@@ -42,7 +42,7 @@
 .parcerias .centraConteudo .textin{
     color: #fff;
     font-family: 'GothamRoundedBold';
-    font-size: 2em;
+    font-size: 1.4em;
     text-align: center;
     width: 600px;
     padding: 14px;
@@ -60,9 +60,44 @@
     width: 904px;
     height: 454px;
     display: inline-block;
+    position: relative;
+    z-index: 2;
     transform: rotateX(0deg);
     -webkit-transform: rotateX(0deg); /* Safari and Chrome */
     background-image: url('../img/parcerias/mapa.png');
+    /*box-shadow: 10px 10px 5px #888888;*/
+}
+.parcerias .centraConteudo .area_mapa .marcador{
+    left:100px;
+    top:150px;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg); /* Safari and Chrome */
+    background-image: url('../img/parcerias/pinocolo.png');
+
+}
+.parcerias .centraConteudo .area_mapa .marcador:hover{
+    cursor:pointer;
+}
+.parcerias .centraConteudo .area_mapa .tip{
+    display: none;
+    font-size: 12px;
+    margin-top: -90px;
+    padding-left: 35px;
+    padding-top: 5px;
+    background-position: 20px 0px;
+    width: 185px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-image: url('../img/parcerias/dialogbuble.svg');
+}
+.parcerias .centraConteudo .area_mapa .marcador:hover .tip{
+    display: block;
+    hover state styling here
 }
 
 

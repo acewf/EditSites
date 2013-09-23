@@ -1,0 +1,269 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Pedro Martins // ace.wf.home@gmail.com.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+.orcamentos {
+    color: #fff;
+    height: 90%;
+    width: 100%;
+    position: relative;
+    font-family: 'GothamRoundedBold';
+    font-size: 14px;
+}
+.orcamentos input[type="text"]{
+    border: none;
+    padding: 0px;
+    height: 23px;
+   
+    background-size: 208px 23px;
+    background-image: url('../img/orcamento/fundo_input.svg');
+
+}
+.orcamentos input[type="submit"]{
+    border: none;
+    margin-top: 45px;
+    margin-left: 95px;
+    width: 172px;
+    height: 38px;
+    background-color: #7bbaad;
+    box-shadow: 2px 2px 2px #000;
+    font-family: 'GothamRoundedBold';
+}
+.orcamentos .area_form .fieldtip{
+    display: inline-block;
+    font-size: 14px;
+    height: 23px;
+
+}
+
+.orcamentos form{
+    width: 376px;
+}
+.orcamentos .separador{
+    width: 376px;
+    height: 3px;
+    background-color: #fff;
+}
+.orcamentos .smallseparador{
+    vertical-align: middle;
+    display: inline-block;
+    width: 175px;
+    height: 3px;
+    background-color: #fff;
+}
+.orcamentos .centraConteudo .area_form .fieldlang{
+     margin-top: -2px;
+    display: inline-block;
+    width: 205px;
+    margin-right: 3px;
+    float: right;
+}
+.orcamentos .centraConteudo .area_form {
+    display: inline-block;
+    width:100%;
+    height: 420px;
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    /*-webkit-box-align:center;*/
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+}
+.orcamentos .centraConteudo .area_form .fristsfields{
+    height: 100px;
+}
+.orcamentos .centraConteudo .area_form .secondfields{
+    height: 180px;
+}
+.orcamentos .centraConteudo .area_form  .title{
+    margin-top: 20px;
+}
+.orcamentos .centraConteudo .area_form  .choice{
+    margin-top: 5px;
+}
+.orcamentos .centraConteudo .area_form .secondfields .choicepage{
+    margin-top:60px;
+}
+.orcamentos .centraConteudo .area_form .thirdfields .choicepage{
+    margin-top:30px;
+}
+.orcamentos .centraConteudo .area_form .smalltxtfield{
+    width: 30px;
+    background-size: 208px 23px;
+    background-color: #fff;
+    color: #444;  
+}
+
+
+.orcamentos .centraConteudo .area_form .centerincontent{
+    display: inline-block;
+    margin: 3px;
+    margin-top: 10px;
+    width: 100%;
+
+}
+.orcamentos .centraConteudo .area_form .centerincontent:first-child{
+    margin-top: 20px;
+}
+
+
+
+.orcamentos .centraConteudo {
+    height: 530px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.orcamentos .centraConteudo .lineback{
+    height: 4px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: 600px 4px;
+    background-image: url('../img/orcamento/orcamentoslines.svg');
+    left: 0;
+}
+
+
+#linedown  {
+    position: relative;
+    bottom: 0;
+}
+
+
+.orcamentos .centraConteudo .textin{
+    color: #fff;
+    font-family: 'GothamRoundedBold';
+    font-size: 1.4em;
+    text-align: center;
+    width: 600px;
+    padding: 14px;
+}
+.orcamentos .centraConteudo .titlePage{
+    height: 70px;
+}
+
+.orcamentos .centraConteudo .titlePage .title{
+    float: left;
+}
+.orcamentos .centraConteudo .imagelogo{
+    position: absolute;
+    top: -50px;
+    margin-left: 610px;
+    height: 122px;
+    width: 89px;
+    background-repeat: no-repeat;
+    background-image: url('../img/orcamento/icon_orcamento.png');
+}
+
+
+.custom-dropdown--large {
+    font-size: 1.5em;
+}
+
+.custom-dropdown--small {
+    font-size: .7em;
+}
+
+.custom-dropdown__select{
+    font-size: inherit; /* inherit size from .custom-dropdown */
+     margin: 0; /* remove default margins */
+    height: 23px;
+    overflow: hidden;
+    font-family: 'GothamRoundedBook';
+   background: url('../img/orcamento/fundo_dropbox.png') no-repeat right #ddd;
+   width: 195px;
+}
+
+.custom-dropdown__select--white {
+    background-color: #fff;
+    color: #000;
+}
+
+@supports (pointer-events: none) and
+      ((-webkit-appearance: none) or
+      (-moz-appearance: none) or
+      (appearance: none)) {
+
+    .custom-dropdown {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .custom-dropdown__select {
+        padding-right: 2.5em; /* accommodate with the pseudo elements for the dropdown arrow */
+        border: 0;
+        border-radius: 3px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;    
+    }
+
+    .custom-dropdown::before,
+    .custom-dropdown::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .custom-dropdown::after { /*  Custom dropdown arrow */
+        content: "\25BC";
+        height: 1em;
+        font-size: .625em;
+        line-height: 1;
+        right: 1.2em;
+        top: 50%; margin-top: -.5em;
+    }
+
+    .custom-dropdown::before { /*  Custom dropdown arrow cover */
+        width: 2em;
+        right: 0; top: 0; bottom: 0;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .custom-dropdown__select[disabled] {
+        color: rgba(0,0,0,.3);
+    }
+
+    .custom-dropdown.custom-dropdown--disabled::after {
+        color: rgba(0,0,0,.1);
+    }
+
+    /* White dropdown style */
+    .custom-dropdown--white::before {
+        top: .5em; bottom: .5em;
+        background-color: #000;
+        border-left: 1px solid rgba(0,0,0,.1);
+    }
+
+    .custom-dropdown--white::after {
+        color: rgba(0,0,0,.9);
+    }
+
+    /* FF only temp fix */
+    @-moz-document url-prefix() {
+        .custom-dropdown__select             { padding-right: .9em }
+        .custom-dropdown--large .custom-dropdown__select { padding-right: 1.3em }
+        .custom-dropdown--small .custom-dropdown__select { padding-right: .5em }
+    }
+}
