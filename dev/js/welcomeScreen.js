@@ -15,7 +15,6 @@ welcomeScreen.fetchTime = function()
 		timeLisboa.hours = h;
 		var timeNY = new Object();
 		timeNY.hours = h-5;
-		console.log(timeNY.hours,"***")
 		if (timeNY.hours<0){timeNY.hours=12+timeNY.hours};
 		var timeTOKYO = new Object();
 		timeTOKYO.hours = h+8;
@@ -24,9 +23,6 @@ welcomeScreen.fetchTime = function()
 		timeTOKYO.minutes = m;
 		timeNY.minutes = m;
 		timeLisboa.minutes = m;
-		console.log(h,m)
-		console.log(timeNY.hours,m)
-		console.log(timeTOKYO.hours,m)
 		
 		return {lisboa:timeLisboa,ny:timeNY,tokyo:timeTOKYO}
 	}

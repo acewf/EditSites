@@ -31,7 +31,7 @@
     width: 600px;
     background-repeat: no-repeat;
     background-size: 600px 4px;
-    background-image: url('../img/oquefazemoslines.svg');
+    background-image: url('../img/oquefazemos/oquefazemoslines.svg');
     left: 0;
 }
 
@@ -44,7 +44,7 @@
 
 .oquefazemos .centraConteudo .textin{
     color: #fff;
-    font-size: 2em;
+    font-size: 1.4em;
     text-align: center;
     width: 600px;
     padding: 14px;
@@ -71,7 +71,7 @@
     height: 121px;
     width: 129px;
     background-repeat: no-repeat;
-    background-image: url('../img/icon_oquefazemos.png');
+    background-image: url('../img/oquefazemos/icon_oquefazemos.png');
 }
 
 .oquefazemos .centraConteudo .contentcontrol{
@@ -83,6 +83,10 @@
 }
 .oquefazemos .centraConteudo .group_content .title ul li{
     font-size: .8em;
+}
+.oquefazemos .centraConteudo .group_content .title .title_area{
+    height: 40px;
+    width: 100%;
 }
 .oquefazemos .centraConteudo .group_content{
     vertical-align: top;

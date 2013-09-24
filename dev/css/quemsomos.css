@@ -28,7 +28,7 @@
     width: 600px;
     background-repeat: no-repeat;
     background-size: 600px 4px;
-    background-image: url('../img/quemsomoslines.svg');
+    background-image: url('../img/quemsomos/quemsomoslines.svg');
     left: 0;
 }
 
@@ -42,7 +42,7 @@
 .QuemSomos .centraConteudo .textin{
     color: #fff;
     font-family: 'GothamRoundedBold';
-    font-size: 2em;
+    font-size: 1.4em;
     text-align: center;
     width: 600px;
     padding: 14px;
@@ -74,7 +74,7 @@
     width: 18px;
     height: 18px;
     display: inline-block;
-    background-image: url('../img/sound.png');
+    background-image: url('../img/quemsomos/sound.png');
 }
 
 
@@ -88,5 +88,5 @@
     height: 122px;
     width: 82px;
     background-repeat: no-repeat;
-    background-image: url('../img/Gbig.png');
+    background-image: url('../img/quemsomos/Gbig.png');
 }

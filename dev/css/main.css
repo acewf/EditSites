@@ -100,8 +100,8 @@ textarea {
     position: absolute;
     z-index: 3;
 }
-.BackGrounds{ 
-    
+.BackGrounds { 
+    height: 100%;
 }
 .overlayMenuClass{
     width: 100%;
@@ -140,8 +140,25 @@ textarea {
     margin: 10px;
     margin-right: 10px;
 }
+.LangMenu li
+{
+    font-family: 'GothamRoundedBold';
+    font-size: 13px;
+    color: #000;
+    font-weight: bold;
+    padding-right: 2px;
+}
 
-
+.LangMenu li:hover
+{
+    color: #cccccc;
+    cursor: pointer;
+}
+.LangMenu li:active
+{
+    color: #fff000;
+    cursor: pointer;
+}
 .LangMenu {
     margin-right: 150px;
     background-color: #ffffff;
@@ -160,8 +177,12 @@ textarea {
     filter:alpha(opacity=100);
     opacity: .6;
 }
+
 .leftMenu li
 {
+    font-family: 'GothamRoundedBold';
+    font-size: 13px;
+    color: #000;
     font-weight: bold;
     margin: 0px;
     padding: 1px;
@@ -171,15 +192,26 @@ textarea {
     position: relative
     
 }
+.leftMenu a:link {
+    color:#000;
+}  
+.leftMenu a:visited  {
+    color:#000;
+}    
+
+.leftMenu a:hover
+{
+    color: #000;
+}
 .leftMenu ul
 {
-    margin-top: 25px;
+    padding-top: 30px;
     text-align: center;
     -webkit-padding-start: 0px;
     width: auto;
     float: right;
-    margin: 10px;
-    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .leftMenu {
     width:185px;
@@ -193,12 +225,12 @@ textarea {
 }
 .svgelement {
     width: 100%;
-    height: 90%;
+    height: 100%;
     display: block;
 }
 .areaContent {
     width: 100%;
-    height: 100%;
+    height: 90%;
     position: relative;
 }
 

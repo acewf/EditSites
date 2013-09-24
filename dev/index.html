@@ -18,13 +18,20 @@
 
         <link rel="stylesheet" href="fonts/gothamrnd-bold.css">
         <link rel="stylesheet" href="fonts/gothamrnd-light.css">
+        <link rel="stylesheet" href="fonts/gothamrnd-book.css">
+        <link rel="stylesheet" href="fonts/gothamrnd-medium.css">
         <!-- CSS AREAS SITE -->
         <link rel="stylesheet" href="css/entrence.css">
         <link rel="stylesheet" href="css/quemsomos.css">
         <link rel="stylesheet" href="css/oquefazemos.css">
+        <link rel="stylesheet" href="css/parcerias.css">
+        <link rel="stylesheet" href="css/orcamentos.css">
+        <link rel="stylesheet" href="css/contactos.css">
+        <link rel="stylesheet" href="css/colaboradores.css">
         <!-- END CSS AREAS SITE -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="js/welcomeScreen.js"></script>
+        <script src="js/parcerias.js"></script>
     </head>
     <body  onload="engine.onLoad()">
         <!--[if lt IE 7]>
@@ -49,31 +56,31 @@
             <div class="leftMenu">
                 <ul>
                     <li><a href="#QuemSomos">QUEM SOMOS</a></li>
-                    <li><a href="#QuemSomos">O QUE FAZEMOS</a></li>
-                    <li><a href="#QuemSomos">PARCERIAS</a></li>
-                    <li><a href="#QuemSomos">PEDIDO DE ORÇAMENTO</a></li>
-                    <li><a href="#QuemSomos">CONTACTOS</a></li>
-                    <li><a href="#QuemSomos">COLABORADORES</a></li>
+                    <li><a href="#OqueFazemos">O QUE FAZEMOS</a></li>
+                    <li><a href="#Parcerias">PARCERIAS</a></li>
+                    <li><a href="#Orcamento">PEDIDO DE ORÇAMENTO</a></li>
+                    <li><a href="#Contactos">CONTACTOS</a></li>
+                    <li><a href="#Colaboradores">COLABORADORES</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="AllContents">
-            <div class="WelcomeScreen">
-                 <img src="img/logogibberish.png" class="logoElement">
+            <div id="WelcomeScreen" class="WelcomeScreen">
+                 <img src="img/wellcomescreen/logogibberish.png" class="logoElement">
                  <div class="relogios">
                     <div id="newyork" class="watchgroup">
                         <div class="relogio">
                             <div class="grouppieces">
-                                <img src="img/base_relogio.png" class="base_relogio">
+                                <img src="img/wellcomescreen/base_relogio.png" class="base_relogio">
                                 <div id="hora" class="ponteiro">
-                                    <img src="img/ponteiro_horas.svg" class="ponteiro_hora">
+                                    <img src="img/wellcomescreen/ponteiro_horas.svg" class="ponteiro_hora">
                                 </div>
                                 <div id="minutos" class="ponteiro">
-                                    <img src="img/ponteiro_minutos.svg" class="ponteiro_minutos">
+                                    <img src="img/wellcomescreen/ponteiro_minutos.svg" class="ponteiro_minutos">
                                 </div>
                                 <div class="centrorelogio">
-                                    <img src="img/clockcenter.svg" class="centrowatch">
+                                    <img src="img/wellcomescreen/clockcenter.svg" class="centrowatch">
                                 </div>
                             </div>
                         </div>
@@ -84,15 +91,15 @@
                     <div id="lisboa" class="watchgroup">
                          <div class="relogio">
                             <div class="grouppieces">
-                                <img src="img/base_relogio.png" class="base_relogio">
+                                <img src="img/wellcomescreen/base_relogio.png" class="base_relogio">
                                 <div id="hora" class="ponteiro">
-                                    <img src="img/ponteiro_horas.svg" class="ponteiro_hora">
+                                    <img src="img/wellcomescreen/ponteiro_horas.svg" class="ponteiro_hora">
                                 </div>
                                 <div id="minutos" class="ponteiro">
-                                    <img src="img/ponteiro_minutos.svg" class="ponteiro_minutos">
+                                    <img src="img/wellcomescreen/ponteiro_minutos.svg" class="ponteiro_minutos">
                                 </div>
                                 <div class="centrorelogio">
-                                    <img src="img/clockcenter.svg" class="centrowatch">
+                                    <img src="img/wellcomescreen/clockcenter.svg" class="centrowatch">
                                 </div>
                             </div>
                         </div>
@@ -103,15 +110,15 @@
                     <div id="tokyo" class="watchgroup">
                          <div class="relogio">
                             <div class="grouppieces">
-                                <img src="img/base_relogio.png" class="base_relogio">
+                                <img src="img/wellcomescreen/base_relogio.png" class="base_relogio">
                                 <div id="hora" class="ponteiro">
-                                    <img src="img/ponteiro_horas.svg" class="ponteiro_hora">
+                                    <img src="img/wellcomescreen/ponteiro_horas.svg" class="ponteiro_hora">
                                 </div>
                                 <div id="minutos" class="ponteiro">
-                                    <img src="img/ponteiro_minutos.svg" class="ponteiro_minutos">
+                                    <img src="img/wellcomescreen/ponteiro_minutos.svg" class="ponteiro_minutos">
                                 </div>
                                 <div class="centrorelogio">
-                                    <img src="img/clockcenter.svg" class="centrowatch">
+                                    <img src="img/wellcomescreen/clockcenter.svg" class="centrowatch">
                                 </div>
                             </div>
                         </div>
@@ -148,7 +155,7 @@
                      </div>
                 </div>
             </div>
-            <div class="oquefazemos">
+            <div id="OqueFazemos" class="oquefazemos">
                 <div class="centraConteudo">
                     <div class="titlePage">
                         <div class="title">
@@ -167,8 +174,10 @@
                     <div class="contentcontrol">
                         <div class="group_content">
                              <div class="title">
+                                <div class="title_area">
                                 TRADUÇÃO<br>
                                 ESCRITA
+                                </div>
                                 <ul>
                                     <li>Tradução de documentos</li>
                                     <li>Tradução técnica</li>
@@ -177,10 +186,12 @@
                              </div>
 
                         </div>
-                        <div class="group_content">
+                        <div class="group_content" style="background-image: url('img/oquefazemos/icon_video.png')">
                              <div class="title">
+                                <div class="title_area">
                                 TRADUÇÃO<br>
                                 AUDIOVISUAL
+                                </div>
                                 <ul>
                                     <li>Tradução e legendagem</li>
                                     <li>Tradução para dobragem</li>
@@ -190,9 +201,11 @@
                              </div>
 
                         </div>
-                        <div class="group_content">
+                        <div class="group_content" style="background-image: url('img/oquefazemos/icon_mouse.png')">
                              <div class="title">
-                                LOCALIZAÇÃO<br>
+                                <div class="title_area">
+                                LOCALIZAÇÃO
+                                </div>
                                 <ul>
                                     <li>Sites</li>
                                     <li>Aplicações</li>
@@ -208,13 +221,178 @@
                     </div>
                 </div>
             </div>
-            <div class="Parcerias">
+            <div id="Parcerias" class="parcerias">
+                <div class="centraConteudo">
+                    <div class="titlePage">
+                        <div class="title">
+                            <div class="lineback"></div>
+                            <div class="textin">
+                                PARCERIAS
+                            </div>
+                             <div id="linedown" class="lineback"></div>
+                        </div>
+                        <div class="imagelogo">
+                        </div>
+                    </div>
+                    <div class="area_mapa">
+                        <div class="marcador">
+                            <div class="tip">
+                                <div class="empresa">Nome da empresa</div>
+                                <div class="tipoprojecto">Tipo de Projecto</div>
+                                <div class="ano">Ano</div>
+                                <div class="observacoes">Observações</div>
+                            </div>
+                        </div>
+
+                         <div class="marcador" style="left:260px;top:230px;">
+                            <div class="tip">
+                                <div class="empresa">EDIT</div>
+                                <div class="tipoprojecto">Tecnologico</div>
+                                <div class="ano">2013</div>
+                                <div class="observacoes">Observações</div>
+                            </div>
+                        </div>
+                        <div class="mapa"/>
+                    </div>
+                    </div>
+                </div>
             </div>
-            <div class="Orcamento">
+            <div id="Orcamento" class="orcamentos">
+                <div class="centraConteudo">
+                    <div class="titlePage">
+                        <div class="title">
+                            <div class="lineback"></div>
+                            <div class="textin">
+                                PEDIDO DE ORÇAMENTO
+                            </div>
+                             <div id="linedown" class="lineback"></div>
+                        </div>
+                        <div class="imagelogo">
+                        </div>
+                    </div>
+                    <div class="area_form">
+                        <form>
+                            <div class="fristsfields">
+                                <div class="centerincontent">
+                                   <div class="fieldtip">LÍNGUA DE PARTIDA:</div><input type="text" name="initpoint" class="fieldlang" >
+                                </div>
+                                <div class="centerincontent">
+                                    <div class="fieldtip">LÍNGUA DE CHEGADA:</div>
+                                    <input type="text" name="endpoint" class="fieldlang">
+                                </div> 
+                            </div>
+                            <div class="separador"></div>
+                            <div class="secondfields">
+                                <div class="title">TIPO DE TRABALHO:TRADUÇÃO ESCRITA</div>
+                                <div class="choice">Estilo de tradução:
+                                    <select class="custom-dropdown__select custom-dropdown__select--white">
+                                      <option value="tecnica">técnica</option>
+                                      <option value="tecnica">técnica</option>
+                                      <option value="tecnica">técnica</option>
+                                      <option value="tecnica">técnica</option>
+                                    </select>
+                                </div>
+                                <div class="choicepage">tamanho: nº <input type="text" name="pagesnr" class="smalltxtfield"> de 
+                                    <select class="custom-dropdown__select custom-dropdown__select--white">
+                                      <option value="paginas">páginas</option>
+                                      <option value="linhas">linhas</option>
+                                      <option value="paragrafos">paragrafos</option>
+                                    </select>
+                                </div> 
+                            </div>
+                             <div class="containseparador">
+                                <div class="smallseparador"></div>
+                                <div style="display:inline-block;">ou</div>
+                                <div class="smallseparador"></div>
+                            </div>
+                            <div class="thirdfields">
+                                <div class="title">TIPO DE TRABALHO:TRADUÇÃO AUDIOVISUAL</div>
+                                <div class="choice">Estilo de tradução:
+                                    <select class="custom-dropdown__select custom-dropdown__select--white">
+                                      <option value="dobragem">dobragem</option>
+                                      <option value="legendas">legendas</option>
+                                      <option value="tecnica">técnica</option>
+                                      <option value="tecnica">técnica</option>
+                                    </select>
+                                </div>
+                                <div class="choicepage">tamanho: nº <input type="text" name="minutosnr" class="smalltxtfield"> de minutos
+                                </div> 
+                            </div>
+                            <input type="submit" name="submit" value="ENVIAR">
+                        </form>
+                    </div>
+                </div>
+
             </div>
-            <div class="Contactos">
+            <div id="Contactos" class="contactos">
+                     <div class="centraConteudo">
+                        <div class="titlePage">
+                            <div class="title">
+                                <div class="lineback"></div>
+                                <div class="textin">
+                                    CONTACTOS
+                                </div>
+                                 <div id="linedown" class="lineback"></div>
+                            </div>
+                            <div class="imagelogo"></div>
+                        </div>
+                        <div class="area_content">
+                            <div class="firsline">
+                                <div class="idwork">
+                                    <div class="nome">MARTA BRÁS MONTEIRO</div>
+                                    <div class="typew">Project Manager</div>
+                                    <div class="contact"><a href="mailto:carla.barroso@gibberish.pt">marta.bm@gibberish.pt</a></div>
+                                </div>
+                                <div class="idwork">
+                                    <div class="nome">LILIANA MURILHAS</div>
+                                    <div class="typew">Senior Translator</div>
+                                    <div class="contact"><a href="mailto:carla.barroso@gibberish.pt">liliana.murilhas@gibberish.pt</a></div>
+                                </div>
+                                <div class="idwork">
+                                    <div class="nome">CARLA BARROSO</div>
+                                    <div class="typew">Senior Translator</div>
+                                    <div class="contact"><a href="mailto:carla.barroso@gibberish.pt">carla.barroso@gibberish.pt</a></div>
+                                </div>
+                           </div>
+                           <div class="secondline">
+                                <div class="morada">MORADA: <b>NINHO DE EMPRESAS DNA CASCAIS, CRUZ DA POPA, 2645-449 ALCABIDECHE PORTUGAL</b></div>
+                                <div class="contacto">PARA PEDIDOS DE ORÇAMENTOS PERSONALIZADOS OU PARA ENVIO DE CV:<br>INFO@GIBBERISH.PT</div>
+                           </div>
+                        </div>
+                        
+                    </div>
+                    <div class="design">
+                            DESIGN: <div class="name">©STUDIO WABA</div>
+                        </div>
             </div>
-            <div class="Colaboradores">
+            <div id="Colaboradores" class="colaboradores">
+                <div class="centraConteudo">
+                    <div class="titlePage">
+                        <div class="title">
+                            <div class="lineback"></div>
+                            <div class="textin">
+                                COLABORADORES
+                            </div>
+                             <div id="linedown" class="lineback"></div>
+                        </div>
+                        <div class="imagelogo">
+                        </div>
+                    </div>
+                    <div class="area_form">
+                        <form>
+                            <div class="fristsfields">
+                                <div class="centerincontent">
+                                   <div class="fieldtip">USERNAME:</div><input type="text" name="initpoint" class="fieldlang" >
+                                </div>
+                                <div class="centerincontent">
+                                    <div class="fieldtip">PASSWORD:</div>
+                                    <input type="text" name="endpoint" class="fieldlang">
+                                </div> 
+                            </div>
+                            <div class="separador"></div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="BackGrounds">

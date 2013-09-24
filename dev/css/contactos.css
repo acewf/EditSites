@@ -1,0 +1,134 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Pedro Martins // ace.wf.home@gmail.com.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+.contactos {
+    height: 90%;
+    width: 100%;
+    position: relative;
+}
+.contactos .centraConteudo {
+    max-width: 628px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.contactos .centraConteudo .lineback{
+    height: 4px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: 600px 4px;
+    background-image: url('../img/contactos/contactoslines.svg');
+    left: 0;
+}
+
+
+#linedown  {
+    position: relative;
+    bottom: 0;
+}
+
+
+.contactos .centraConteudo .textin{
+    color: #fff;
+    font-family: 'GothamRoundedBold';
+    font-size: 1.4em;
+    text-align: center;
+    width: 600px;
+    padding: 14px;
+}
+.contactos .centraConteudo .titlePage{
+    height: 70px;
+}
+.contactos .centraConteudo .titlePage .title{
+    float: left;
+}
+.contactos .centraConteudo .area_content .firsline{
+    font-family: 'GothamRoundedMedium';
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.contactos .centraConteudo .area_content .secondline{
+    font-family: 'GothamRoundedBold';
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+}
+.contactos .centraConteudo .area_content .secondline b{
+    font-family: 'GothamRoundedBook';
+}
+
+.contactos .centraConteudo .imagelogo{
+    position: absolute;
+    top: -50px;
+    margin-left: 610px;
+    height: 119px;
+    width: 103px;
+    background-repeat: no-repeat;
+    background-image: url('../img/contactos/icon_contactos.png');
+}
+
+.contactos .centraConteudo .area_content{
+    height: 300px;
+    margin-left: -45px;
+    width: 720px;
+}
+
+.contactos .centraConteudo .area_content .idwork{
+    width: 32%;
+    display: inline-block;
+}
+.contactos .centraConteudo .area_content .idwork .nome{
+    margin-bottom: 5px;
+}
+.contactos .centraConteudo .area_content .idwork .typew{
+    font-family: 'GothamRoundedBook';
+    margin-bottom: 10px;
+}
+.contactos .centraConteudo .area_content .idwork .contact a:link{
+    font-family: 'GothamRoundedBold';
+    font-size: 14px;
+    color: #000;
+}
+
+
+.contactos .centraConteudo .area_content .secondline .morada{
+    font-family: 'GothamRoundedBook';
+    margin-bottom: 40px;
+}
+.contactos .centraConteudo .area_content .secondline .contacto{
+    font-family: 'GothamRoundedMedium';
+}
+.design{
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    top: 100%;
+    color: #86d0d0;
+    font-size: 13px;
+    font-family: 'GothamRoundedBook';
+}
+.design .name{
+    font-family: 'GothamRoundedMedium';
+    display: inline-block;
+}
+.design .name:hover{
+    color: #fff;
+    cursor: pointer;
+}

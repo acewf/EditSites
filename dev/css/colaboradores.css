@@ -1,0 +1,132 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Pedro Martins // ace.wf.home@gmail.com.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+.colaboradores {
+    color: #fff;
+    height: 90%;
+    width: 100%;
+    position: relative;
+    font-family: 'GothamRoundedBold';
+    font-size: 14px;
+}
+.colaboradores input[type="text"]{
+    border: none;
+    padding: 0px;
+    height: 23px;
+   
+    background-size: 269px 24px;
+    background-image: url('../img/colaboradores/fundo_input.svg');
+
+}
+.colaboradores .area_form .fieldtip{
+    display: inline-block;
+    font-size: 14px;
+    height: 23px;
+
+}
+
+.colaboradores form{
+    width: 376px;
+    margin-top: 50px;
+}
+.colaboradores .centraConteudo .area_form {
+    display: inline-block;
+    width:100%;
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    /*-webkit-box-align:center;*/
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+}
+.colaboradores .centraConteudo .area_form .fristsfields{
+    height: 100px;
+}
+.colaboradores .centraConteudo .area_form .secondfields{
+    height: 180px;
+}
+.colaboradores .centraConteudo .area_form  .title{
+    margin-top: 20px;
+}
+
+.colaboradores .centraConteudo .area_form .fieldlang{
+     margin-top: -2px;
+    display: inline-block;
+    width: 270px;
+    margin-right: 3px;
+    float: right;
+}
+
+.colaboradores .centraConteudo .area_form .centerincontent{
+    display: inline-block;
+    margin: 3px;
+    margin-top: 10px;
+    width: 100%;
+
+}
+.colaboradores .centraConteudo {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.colaboradores .centraConteudo .lineback{
+    height: 4px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: 600px 4px;
+    background-image: url('../img/colaboradores/colaboradoreslines.svg');
+    left: 0;
+}
+
+
+#linedown  {
+    position: relative;
+    bottom: 0;
+}
+
+
+.colaboradores .centraConteudo .textin{
+    color: #fff;
+    font-family: 'GothamRoundedBold';
+    font-size: 1.4em;
+    text-align: center;
+    width: 600px;
+    padding: 14px;
+}
+.colaboradores .centraConteudo .titlePage{
+    height: 70px;
+}
+
+.colaboradores .centraConteudo .titlePage .title{
+    float: left;
+}
+.colaboradores .centraConteudo .imagelogo{
+    position: absolute;
+    top: -50px;
+    margin-left: 610px;
+    height: 122px;
+    width: 89px;
+    background-repeat: no-repeat;
+    background-image: url('../img/colaboradores/colaboradores.png');
+}
