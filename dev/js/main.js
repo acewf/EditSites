@@ -27,10 +27,14 @@ engine.onLoad = function(){
 	engine.parcerias = parcerias;
 	engine.WelcomeScreen = welcomeScreen;
 	engine.QuemSomos = quemsomos;
+	engine.orcamentos = orcamentos;
+
+	console.log('engine.orcamentos$$$$$engine.orcamentos')
 
 	engine.QuemSomos.init();
 	engine.parcerias.init();
 	engine.WelcomeScreen.init();
+	engine.orcamentos.init();
 
 	console.log('engine init');
 	welcomeScreen.updateTimeClock();

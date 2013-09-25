@@ -33,6 +33,7 @@
         <script src="js/welcomeScreen.js"></script>
         <script src="js/parcerias.js"></script>
         <script src="js/quemsomos.js"></script>
+        <script src="js/orcamentos.js"></script>
     </head>
     <body  onload="engine.onLoad()">
         <!--[if lt IE 7]>
@@ -272,7 +273,7 @@
                         </div>
                     </div>
                     <div class="area_form">
-                        <form>
+                        <form id="orcamentoform" onsubmit="return false;">
                             <div class="fristsfields">
                                 <div class="centerincontent">
                                    <div class="fieldtip">LÍNGUA DE PARTIDA:</div><input type="text" name="initpoint" class="fieldlang" >
@@ -319,7 +320,14 @@
                                 <div class="choicepage">tamanho: nº <input type="text" name="minutosnr" class="smalltxtfield"> de minutos
                                 </div> 
                             </div>
-                            <input type="submit" name="submit" value="ENVIAR">
+                            <script type="text/javascript">
+                                function submitdone(){
+                                    console.log(":submitdone:###")
+                                    console.log(engine.orcamentos)
+                                    engine.orcamentos.submitform();   
+                                }
+                            </script>
+                            <input type="submit" name="submit" onClick="submitdone();" value="ENVIAR">
                         </form>
                     </div>
                 </div>
