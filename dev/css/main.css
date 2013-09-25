@@ -194,6 +194,7 @@ textarea {
 }
 .leftMenu a:link {
     color:#000;
+    text-decoration: none;
 }  
 .leftMenu a:visited  {
     color:#000;
@@ -201,7 +202,7 @@ textarea {
 
 .leftMenu a:hover
 {
-    color: #000;
+    color: #ccc;
 }
 .leftMenu ul
 {

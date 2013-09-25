@@ -10,36 +10,41 @@ screenAreas.push({class:'.colaboradores',hash:'Colaboradores'});
 
 
 
-engine.hashchange =  function (argument) {
-	// body...
-	console.log(argument)
-	//$(document.body).scrollTop($('#anchorName2').offset().top);
+engine.hashchange =  function (e,hashvalue) {
+		if (e!=null) {e.preventDefault();};
+	    var target = hashvalue,
+	    $target = $(target);
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+
+	        window.location.hash = target;
+	    });
 }
+
 
 engine.onLoad = function(){
 	engine.parcerias = parcerias;
-	parcerias.desapperScreen();
-	engine.welcomeScreen = welcomeScreen;
+	engine.WelcomeScreen = welcomeScreen;
+	engine.QuemSomos = quemsomos;
+
+	engine.QuemSomos.init();
+	engine.parcerias.init();
+	engine.WelcomeScreen.init();
+
 	console.log('engine init');
 	welcomeScreen.updateTimeClock();
 	setInterval(function(){welcomeScreen.updateTimeClock()},60*1000);
 
 	$('a[href^="#"]').on('click',function (e) {
-	    e.preventDefault();
-
-	    var target = this.hash,
-	    $target = $(target);
-
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 900, 'swing', function () {
-	        window.location.hash = target;
-	    });
+		console.log("supost dispatch",this.hash)
+	    engine.hashchange(e,this.hash);
 	});
 
 	
 
   window.onscroll = function (event) {
+
         var perc = window.pageYOffset/ ($(document.body).height()-window.innerHeight);
 		var limitValue = $(document.body).height()/4;//400;
 		var difValue = limitValue-100;
@@ -51,7 +56,7 @@ engine.onLoad = function(){
 			//console.log(localValue,screenAreas[i]);
 			var valueArea = screenAreas[i].class.substring(1,screenAreas[i].class.length);
 
-			console.log(valueArea,"####valueArea#");
+
 			if (localValue>difValue) {
 				
 				var parsevalue = (localValue-difValue);
@@ -76,8 +81,6 @@ engine.onLoad = function(){
 			}
 			
 		};
-
-		
         //console.log(rolled,window.pageYOffset,document.body.clientHeight,perc);
     }
 
@@ -100,4 +103,8 @@ engine.onLoad = function(){
 
     	console.log(location.hash) 
     });
+    window.onscroll(null);
+    /*
+    window.onresize=function(){console.log(location.hash,'resize');engine.hashchange(null,location.hash);};
+    */
 }

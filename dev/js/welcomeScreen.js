@@ -1,4 +1,11 @@
 var welcomeScreen = new Object();
+welcomeScreen.init = function(){
+	welcomeScreen.desapperScreen(0);
+}
+welcomeScreen.apperScreen = function(){
+}
+welcomeScreen.desapperScreen = function(actualAlpha){
+}
 welcomeScreen.fetchTime = function()
 	{
 		var today=new Date();
