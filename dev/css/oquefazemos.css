@@ -16,7 +16,7 @@
     position: relative;
 }
 .oquefazemos .centraConteudo {
-    max-width: 628px;
+    max-width: 600px;
     display: inline-block;
     position: absolute;
     left: 50%;
@@ -53,7 +53,6 @@
     margin-top: 10px;
     font-size: 1em;
     text-align: center;
-    width: 600px;
     padding: 14px;
 }
 
@@ -76,7 +75,25 @@
 
 .oquefazemos .centraConteudo .contentcontrol{
     padding-top: 60px;
-    min-width: 778px;
+    /* Internet Explorer 10 */
+    display:-ms-flexbox;
+    -ms-flex-pack:center;
+    -ms-flex-align:center;
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
 }
 .oquefazemos .centraConteudo .group_content .title{
     padding-top: 60px;
@@ -88,13 +105,38 @@
     height: 40px;
     width: 100%;
 }
+.oquefazemos .centraConteudo ul{
+    padding: 0 0 0 1em;
+}
+
 .oquefazemos .centraConteudo .group_content{
+    margin: 10px;
     vertical-align: top;
     display: inline-block;
     background-repeat:no-repeat;
     background-image: url('../img/oquefazemos/icon_lapis.png');
+    /* Internet Explorer 10 */
+    display:-ms-flexbox;
+    -ms-flex-pack:center;
+    -ms-flex-align:center;
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
 }
 .oquefazemos .centraConteudo .certificado{
+    width: 120%;
     margin-left: -50px;
     font-size: .8em;
     padding-left: 50px;

@@ -89,6 +89,7 @@ engine.onLoad = function(){
     }
 
 	// for mouse scrolling in Firefox
+	
     var elem = document;
     if (elem.addEventListener) {    // all browsers except IE before version 9
             // Internet Explorer, Opera, Google Chrome and Safari

@@ -21,8 +21,11 @@
     padding: 0px;
     height: 23px;
    
-    background-size: 208px 23px;
-    background-image: url('../img/orcamento/fundo_input.svg');
+    background-size: 209px 23px;
+    background: url(../img/orcamento/fundo_input.png) no-repeat center center;
+    /*
+    background: rgba(0,0,0,0) url(../img/orcamento/fundo_input.svg) no-repeat center center;
+    */
 
 }
 .orcamentos input[type="submit"]{
@@ -85,22 +88,23 @@
     box-align:center;
 }
 .orcamentos .centraConteudo .area_form .fristsfields{
-    height: 100px;
+    /*height: 100px;*/
 }
 .orcamentos .centraConteudo .area_form .secondfields{
-    height: 180px;
+   /* height: 180px;*/
 }
 .orcamentos .centraConteudo .area_form  .title{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .orcamentos .centraConteudo .area_form  .choice{
     margin-top: 5px;
 }
 .orcamentos .centraConteudo .area_form .secondfields .choicepage{
-    margin-top:60px;
+    margin-top:20px;
+    margin-bottom: 10px;
 }
 .orcamentos .centraConteudo .area_form .thirdfields .choicepage{
-    margin-top:30px;
+    margin-top:10px;
 }
 .orcamentos .centraConteudo .area_form .smalltxtfield{
     width: 30px;
@@ -114,6 +118,7 @@
     display: inline-block;
     margin: 3px;
     margin-top: 10px;
+    margin-bottom: 10px;
     width: 100%;
 
 }
@@ -124,7 +129,6 @@
 
 
 .orcamentos .centraConteudo {
-    height: 530px;
     display: inline-block;
     position: absolute;
     left: 50%;

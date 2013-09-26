@@ -3,32 +3,37 @@
  //print_r($_POST);exit; //   mostrar apenas variaveis e nao fazer nada!!!
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	if($_POST['initpoint']){ $nome = $_POST['initpoint']; } else { $nome = "---"; }
+	if($_POST['email']){ $email = $_POST['email']; } else { $email = "---"; }
+	if($_POST['initpoint']){ $initpoint = $_POST['initpoint']; } else { $initpoint = "---"; }
+	if($_POST['endpoint']){ $endpoint = $_POST['endpoint']; } else { $endpoint = "---"; }
+	if($_POST['workstyle']){ $workstyle = $_POST['workstyle']; } else { $workstyle = "---"; }
+	if($_POST['worktype']){ $worktype = $_POST['worktype']; } else { $worktype = "---"; }
+	if($_POST['pagesnr']){ $pagesnr = $_POST['pagesnr']; } else { $pagesnr = "---"; }
+	if($_POST['workmedia']){ $workmedia = $_POST['workmedia']; } else { $workmedia = "---"; }
+	if($_POST['minutosnr']){ $minutosnr = $_POST['minutosnr']; } else { $minutosnr = "---"; }
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-$subject = $nome.', aqui está o nosso catálogo de Caixa de Cartão com Tampa. | Superofi Portugal';
+$subject = 'Pedido de orçamento';
 $to = 'ace.wf.home@gmail.com';
 
 $message = '
-<p>Estimado '.$nome.'</p>
-<p>Conforme requerido, vimos por este meio enviar-lhe o nosso catálogo de Caixa de Cartão com Tampa.</p>
-<p>Para consultar o catalogo basta clicar no <i>link</i> em baixo:</p>
-<p>&gt;&gt; <a href="http://promocoes.superofi.pt/20130227/Catalogo_Precos/">Catálogo de Caixa de Cartão com Tampa</a></p>
-<p><br>
-Para qualquer esclarecimento, não hesite em nos contactar.</p>
-<p>Equipa Superofi.<br>
-  219 820 116<br>
-  info@superofi.pt
-</p>
-';
+<p> EMAL: '.$email.'</p>
+<p> LÍNGUA DE PARTIDA:'.$initpoint.'<br>
+LÍNGUA DE CHEGADA:'.$endpoint.'</p>
+<p> TIPO DE TRABALHO:<br>TRADUÇÃO ESCRITA<br>
+Estilo de tradução:'.$workstyle.'<br>
+Tipo:'.$worktype.'<br>
+Tamanho:'.$pagesnr.'</p>
+<p>Tradução audiovisual:'.$workmedia.'<br>
+Tamanho:'.$minutosnr.'</p>';
 	
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	//definições de email
-		$from = "Superofi Portugal <ace_wf@hotmail.com>";
+		$from = "Gibberish <noreplay@gibberish.pt>";
 		
 		$xheaders = "";
 		$xheaders .= "From: $from\n";
