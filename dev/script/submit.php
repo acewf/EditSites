@@ -1,3 +1,4 @@
+<?php header('Access-Control-Allow-Origin: *'); ?>
 <?php
 
  //print_r($_POST);exit; //   mostrar apenas variaveis e nao fazer nada!!!

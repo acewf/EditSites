@@ -75,6 +75,7 @@
 
 .oquefazemos .centraConteudo .contentcontrol{
     padding-top: 60px;
+    width: 100%;
     /* Internet Explorer 10 */
     display:-ms-flexbox;
     -ms-flex-pack:center;

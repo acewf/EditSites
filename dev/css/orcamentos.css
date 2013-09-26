@@ -47,6 +47,7 @@
 
 .orcamentos form{
     width: 376px;
+    margin: auto;
 }
 .orcamentos .separador{
     width: 376px;
@@ -56,7 +57,7 @@
 .orcamentos .smallseparador{
     vertical-align: middle;
     display: inline-block;
-    width: 175px;
+    width: 174px;
     height: 3px;
     background-color: #fff;
 }
@@ -71,7 +72,6 @@
     display: inline-block;
     width:100%;
     height: 420px;
-
     /* Firefox */
     display:-moz-box;
     -moz-box-pack:center;
@@ -159,7 +159,6 @@
     font-family: 'GothamRoundedBold';
     font-size: 1.4em;
     text-align: center;
-    width: 600px;
     padding: 14px;
 }
 .orcamentos .centraConteudo .titlePage{

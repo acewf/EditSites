@@ -13,11 +13,15 @@ orcamentos.desapperScreen = function(actualAlpha){
 
 orcamentos.submitform = function(){
 	console.log('processa o php aqui');
-	console.log($("#html-form").serialize())
-	  $.post("script/submit.php", $("#orcamentoform").serialize(), function(data){
+	 $('body').append( '<div class="overlay" onclick="orcamentos.closeFeedback()">');
+	  $.post("http://gibberish.pixelkiller.net/script/submit.php", $("#orcamentoform").serialize(), function(data){
             //do stuff here...
             console.log('after processa o php aqui...',data);
+            $('body').append( '<div class="message">A Sua Mensagem foi enviada com sucesso.<br>em breve ira ser contatado.</div>' );
         });
 }
-
+orcamentos.closeFeedback = function(){
+	$( ".overlay" ).remove();
+	$( ".message" ).remove();
+}
 console.log("...orcamentos Object added to engine#####")
