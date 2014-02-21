@@ -1,3 +1,4 @@
+
 var engine = new Object();
 var screenAreas = new Array();
 screenAreas.push({class:'.WelcomeScreen',hash:'WelcomeScreen'});
@@ -9,15 +10,26 @@ screenAreas.push({class:'.contactos',hash:'Contactos'});
 screenAreas.push({class:'.colaboradores',hash:'Colaboradores'});
 
 
+engine.classRef = {};
+engine.classRef[".WelcomeScreen"] = "WelcomeScreen";
+engine.classRef[".QuemSomos"] = "QuemSomos";
+engine.classRef[".oquefazemos"] = "QueFazemos";
+engine.classRef[".parcerias"] = "Parcerias";
+engine.classRef[".orcamentos"] = "Orcamentos";
+engine.classRef[".contactos"] = "Contactos";
+engine.classRef[".colaboradores"] = "Colaboradores";
+
 
 engine.hashchange =  function (e,hashvalue) {
+	var times = 0;
 		if (e!=null) {e.preventDefault();};
 	    var target = hashvalue,
 	    $target = $(target);
 	    $('html, body').stop().animate({
 	        'scrollTop': $target.offset().top
 	    }, 900, 'swing', function () {
-
+	    	times++;
+	    	console.log(target,times);
 	        window.location.hash = target;
 	    });
 }
@@ -28,9 +40,6 @@ engine.onLoad = function(){
 	engine.WelcomeScreen = welcomeScreen;
 	engine.QuemSomos = quemsomos;
 	engine.orcamentos = orcamentos;
-
-	console.log('engine.orcamentos$$$$$engine.orcamentos')
-
 	engine.QuemSomos.init();
 	engine.parcerias.init();
 	engine.WelcomeScreen.init();
@@ -45,24 +54,25 @@ engine.onLoad = function(){
 	    engine.hashchange(e,this.hash);
 	});
 
+	$('.soundicon').on('click',function (e) {
+		console.log('click++++');
+		var sfx = new Audio('http://img.tfd.com/hm/mp3/G0117000.mp3');
+		sfx.play();
+	});
+	
 	
 
-  window.onscroll = function (event) {
+  	window.onscroll = function (event) {
 
-        var perc = window.pageYOffset/ ($(document.body).height()-window.innerHeight);
+        var perc = window.pageYOffset/ ($(document).height()-window.innerHeight);
 		var limitValue = $(document.body).height()/4;//400;
-		var difValue = limitValue-100;
-
+		var difValue = limitValue-50;		
 		for (var i = screenAreas.length - 1; i >= 0; i--) {
-			var objTest = $(screenAreas[i].class)
-			var localValue = $(screenAreas[i].class).position().top-window.pageYOffset; 
-			localValue = Math.sqrt(localValue*localValue)
-			//console.log(localValue,screenAreas[i]);
+			var objTest = $(screenAreas[i].class);
+			var localValue = objTest.parent().position().top-window.pageYOffset; 
+			localValue = Math.sqrt(localValue*localValue);
 			var valueArea = screenAreas[i].class.substring(1,screenAreas[i].class.length);
-
-
-			if (localValue>difValue) {
-				
+			if (localValue>difValue) {				
 				var parsevalue = (localValue-difValue);
 				if (parsevalue>limitValue) {parsevalue=limitValue};
 				var actualAlpha = 1-(parsevalue/limitValue);
@@ -75,6 +85,7 @@ engine.onLoad = function(){
 			}  else {
 				window.location.hash = "#"+screenAreas[i].hash;
 				$(screenAreas[i].class).css({ 'opacity' : 1 });
+				console.log(screenAreas[i].class,":P:P;")
 				if (engine[valueArea]!=undefined){
 					if (!engine[valueArea].active) {
 						engine[valueArea].apperScreen();
@@ -85,6 +96,7 @@ engine.onLoad = function(){
 			}
 			
 		};
+		
         //console.log(rolled,window.pageYOffset,document.body.clientHeight,perc);
     }
 
@@ -102,12 +114,13 @@ engine.onLoad = function(){
             elem.attachEvent ("onmousewheel", window.onscroll);
         }
     }
-
+    /*
     $(window).bind( 'hashchange',function(e) {
     	event.preventDefault();
 
-    	console.log(location.hash) 
+    	console.log(location.hash," BIND WINDOW") 
     });
+	*/
     window.onscroll(null);
     /*
     window.onresize=function(){console.log(location.hash,'resize');engine.hashchange(null,location.hash);};

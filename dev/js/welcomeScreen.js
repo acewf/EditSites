@@ -13,7 +13,7 @@ welcomeScreen.fetchTime = function()
 		var h=today.getUTCHours();
 		var m=today.getUTCMinutes();
 
-		h=h+1;
+		//h=h+1;
 		
 		// add a zero in front of numbers<10
 		
@@ -21,10 +21,11 @@ welcomeScreen.fetchTime = function()
 		var timeLisboa = new Object();
 		timeLisboa.hours = h;
 		var timeNY = new Object();
+
 		timeNY.hours = h-5;
 		if (timeNY.hours<0){timeNY.hours=12+timeNY.hours};
 		var timeTOKYO = new Object();
-		timeTOKYO.hours = h+8;
+		timeTOKYO.hours = h+9;
 		if (timeTOKYO.hours>12){timeTOKYO.hours=timeTOKYO.hours-12};
 
 		timeTOKYO.minutes = m;

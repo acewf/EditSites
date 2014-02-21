@@ -9,9 +9,13 @@
    Base styles: opinionated defaults
    ========================================================================== */
 .QuemSomos {
-    height: 90%;
+     z-index: 10;
+    height: 100%;
     width: 100%;
-    position: relative;
+    position: absolute;
+}
+.QuemSomos_parent {
+    min-height: 800px;
 }
 .QuemSomos .centraConteudo {
     display: inline-block;
@@ -69,12 +73,14 @@
     height: 100%;
     margin-top: 30px;
     font-smooth: always ;
+    text-align: justify;
 }
 .QuemSomos .centraConteudo .smalltxt_quemsomos .soundicon{
     width: 18px;
     height: 18px;
     display: inline-block;
     background-image: url('../img/quemsomos/sound.png');
+    cursor: pointer;
 }
 
 

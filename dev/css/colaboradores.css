@@ -10,11 +10,16 @@
    ========================================================================== */
 .colaboradores {
     color: #fff;
-    height: 90%;
-    width: 100%;
-    position: relative;
     font-family: 'GothamRoundedBold';
     font-size: 14px;
+
+     z-index: 10;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.colaboradores_parent {
+    min-height: 400px;
 }
 .colaboradores input[type="text"]{
     border: none;

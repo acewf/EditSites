@@ -11,9 +11,15 @@
 .oquefazemos {
     font-family: 'GothamRoundedBold';
     color: #fff;
-    height: 90%;
+    min-height: 600px;
+
+    z-index: 10;
+    height: 100%;
     width: 100%;
-    position: relative;
+    position: absolute;
+}
+.oquefazemos_parent {
+    min-height: 800px;
 }
 .oquefazemos .centraConteudo {
     max-width: 600px;

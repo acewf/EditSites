@@ -9,9 +9,13 @@
    Base styles: opinionated defaults
    ========================================================================== */
 .contactos {
-    height: 90%;
+     z-index: 10;
+    height: 100%;
     width: 100%;
-    position: relative;
+    position: absolute;
+}
+.contactos_parent {
+    min-height: 800px;
 }
 .contactos .centraConteudo {
     max-width: 628px;
