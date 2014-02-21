@@ -60,6 +60,8 @@
     font-size: 1em;
     text-align: center;
     padding: 14px;
+    padding-left: 42px;
+    padding-right: 42px;
 }
 
 
@@ -104,6 +106,7 @@
 }
 .oquefazemos .centraConteudo .group_content .title{
     padding-top: 60px;
+    height: 140px;
 }
 .oquefazemos .centraConteudo .group_content .title ul li{
     font-size: .8em;
@@ -143,7 +146,7 @@
     box-align:center;
 }
 .oquefazemos .centraConteudo .certificado{
-    width: 120%;
+    width: 110%;
     margin-left: -50px;
     font-size: .8em;
     padding-left: 50px;

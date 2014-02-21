@@ -198,9 +198,7 @@ include 'languagereference.php';
                             <div class="imagelogo">
                             </div>
                         </div>
-                        <div class="subtitle">
-                            Providenciamos serviços de tradução e revisão profissional, de e para qualquer língua, em várias áreas:
-                        </div>
+                        <div class="subtitle"><?php echo $baseBy->qfazemos_area->text17; ?></div>
                         <div class="contentcontrol">
                             <div class="group_content">
                                  <div class="title">
@@ -311,10 +309,11 @@ include 'languagereference.php';
                                 <div class="tip">
                                     <div class="empresa">Deutschland</div>
                                     <div class="tipoprojecto">Frankfurt</div>
-                                    <div class="ano"></div>
+                                    <div class="ano">Hamburg</div>
                                     <div class="observacoes"></div>
                                 </div>
                             </div>
+
 
                             <div class="marcador" style="left:312px;top:153px;">
                                 <div class="tip">
@@ -333,10 +332,18 @@ include 'languagereference.php';
                                     <div class="observacoes"></div>
                                 </div>
                             </div>
+                            <div class="marcador" style="left:355px;top:210px;">
+                                <div class="tip">
+                                    <div class="empresa">România</div>
+                                    <div class="tipoprojecto">Timișoara</div>
+                                    <div class="ano"></div>
+                                    <div class="observacoes"></div>
+                                </div>
+                            </div>
                             <div class="marcador" style="left: 271px;top: 182px;">
                                 <div class="tip">
                                     <div class="empresa">UK</div>
-                                    <div class="tipoprojecto">LONDON</div>
+                                    <div class="tipoprojecto">London</div>
                                     <div class="ano"></div>
                                     <div class="observacoes"></div>
                                 </div>
@@ -345,6 +352,14 @@ include 'languagereference.php';
                                 <div class="tip">
                                     <div class="empresa">Cameroun</div>
                                     <div class="tipoprojecto">Douala</div>
+                                    <div class="ano"></div>
+                                    <div class="observacoes"></div>
+                                </div>
+                            </div>
+                            <div class="marcador" style="left: 320px;top: 385px;">
+                                <div class="tip">
+                                    <div class="empresa">Angola</div>
+                                    <div class="tipoprojecto">Luanda</div>
                                     <div class="ano"></div>
                                     <div class="observacoes"></div>
                                 </div>
@@ -488,7 +503,7 @@ include 'languagereference.php';
                                 <div class="separador"></div>
                                 <div class="secondfields">
                                     <div class="title"><?php echo $baseBy->orcamento_area->text4; ?> : <?php echo $baseBy->orcamento_area->text3; ?></div>
-                                    <div class="choice">Estilo de tradução:
+                                    <div class="choice"><?php echo $baseBy->orcamento_area->text23; ?>
                                         <select name="workstyle" class="custom-dropdown__select custom-dropdown__select--white">
                                           <option value="tecnica"><?php echo $baseBy->orcamento_area->text5; ?></option>
                                           <option value="tecnica"><?php echo $baseBy->orcamento_area->text6; ?></option>
@@ -498,8 +513,6 @@ include 'languagereference.php';
                                     <div class="choicepage"><?php echo $baseBy->orcamento_area->text8; ?> : nº <input type="text" name="pagesnr" class="smalltxtfield"> de 
                                         <select name="worktype" class="custom-dropdown__select custom-dropdown__select--white">
                                           <option value="paginas"><?php echo $baseBy->orcamento_area->text9; ?></option>
-                                          <option value="linhas">linhas</option>
-                                          <option value="paragrafos">paragrafos</option>
                                         </select>
                                     </div> 
                                 </div>
@@ -517,9 +530,6 @@ include 'languagereference.php';
                                           <option value="<?php echo $baseBy->orcamento_area->text14; ?>"><?php echo $baseBy->orcamento_area->text14; ?> </option>
                                           <option value="<?php echo $baseBy->orcamento_area->text15; ?>"><?php echo $baseBy->orcamento_area->text15; ?> </option>
                                           <option value="<?php echo $baseBy->orcamento_area->text16; ?>"><?php echo $baseBy->orcamento_area->text16; ?> </option>
-                                          <option value="<?php echo $baseBy->orcamento_area->text17; ?>"><?php echo $baseBy->orcamento_area->text17; ?> </option>
-                                          <option value="<?php echo $baseBy->orcamento_area->text18; ?>"><?php echo $baseBy->orcamento_area->text18; ?> </option>
-                                          <option value="<?php echo $baseBy->orcamento_area->text19; ?>"><?php echo $baseBy->orcamento_area->text19; ?> </option>
                                         </select>
                                     </div>
                                     <div class="choicepage"><?php echo $baseBy->orcamento_area->text20; ?>: nº <input type="text" name="minutosnr" class="smalltxtfield"> <?php echo $baseBy->orcamento_area->text21; ?>

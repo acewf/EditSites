@@ -19,7 +19,7 @@ $infoDB->pt->quemsomos_area->title = 'QUEM SOMOS';
 $infoDB->pt->quemsomos_area->text1 = 'algaraviada incompreensível;';
 $infoDB->pt->quemsomos_area->text2 = 'linguagem sem nexo;';
 $infoDB->pt->quemsomos_area->text3 = 'A nossa empresa de serviços de tradução…';
-$infoDB->pt->quemsomos_area->text4 = '... fundada e gerida por três profissionais experientes empenhadas na prestação de um serviço de elevada qualidade. Gostamos da agilidade que uma estrutura leve e informal nos permite, mas não fazemos concessões na competência, no empenho, nem nas qualificações. Não gostamos de barreiras linguísticas e pretendemos derrubá-las. Não tememos as línguas exóticas, os prazos apertados, nem os assuntos complicados.<br><br> Por mais impossível que possa parecer o desafio, nós estamos interessadas!';
+$infoDB->pt->quemsomos_area->text4 = '... fundada e gerida por três profissionais experientes, empenhadas na prestação de um serviço de elevada qualidade. Gostamos da agilidade que uma estrutura leve e informal nos permite, mas não fazemos concessões na competência, no empenho, nem nas qualificações. Não gostamos de barreiras linguísticas e pretendemos derrubá-las. Não tememos as línguas exóticas, os prazos apertados, nem os assuntos complicados.<br><br> Por mais impossível que possa parecer o desafio, nós estamos interessadas!';
 
 $infoDB->pt->qfazemos_area = (object) 'qfazemos_area';
 $infoDB->pt->qfazemos_area->title = 'O QUE FAZEMOS';
@@ -39,6 +39,7 @@ $infoDB->pt->qfazemos_area->text13 = 'Software';
 $infoDB->pt->qfazemos_area->text14 = 'TRADUÇÃO CERTIFICADA';
 $infoDB->pt->qfazemos_area->text15 = 'Em Portugal, para uma tradução ter validade legal, é necessário certificá-la junto de organismos com poderes para tal.';
 $infoDB->pt->qfazemos_area->text16 = 'No caso da Gibberish, fazemo-lo junto de advogados e da PGR.';
+$infoDB->pt->qfazemos_area->text17 = 'Providenciamos serviços de tradução e revisão profissional, de e para qualquer língua, em várias áreas:';
 
 $infoDB->pt->parcerias_area = (object) 'parcerias_area';
 $infoDB->pt->parcerias_area->title = 'PARCERIAS';
@@ -69,6 +70,7 @@ $infoDB->pt->orcamento_area->text19 = 'com guião';
 $infoDB->pt->orcamento_area->text20 = 'tamanho';
 $infoDB->pt->orcamento_area->text21 = 'minutos';
 $infoDB->pt->orcamento_area->text22 = 'ENVIAR';
+$infoDB->pt->orcamento_area->text23 = 'Estilo de tradução:';
 
 $infoDB->pt->colaboradores_area = (object) 'colaboradores_area';
 $infoDB->pt->colaboradores_area->title = 'COLABORADORES';
@@ -78,6 +80,7 @@ $infoDB->pt->colaboradores_area->password = 'PASSWORD';
 $infoDB->pt->contactos_area = (object) 'contactos_area';
 $infoDB->pt->contactos_area->title = 'CONTACTOS';
 $infoDB->pt->contactos_area->text1 = 'Para pedidos de orçamentos personalizados e envio de CV:';
+$infoDB->pt->contactos_area->text2 = 'Morada';
 
 //// INGLES ////
 
@@ -85,7 +88,7 @@ $infoDB->en = (object) 'lang';
 $infoDB->en->menu = (object) 'menu';
 $infoDB->en->menu->quemsomos = "WHO WE ARE";
 $infoDB->en->menu->oquefazemos = "WHAT WE DO";
-$infoDB->en->menu->parcerias = "PARTNERSHIPS / CLIENTS";
+$infoDB->en->menu->parcerias = "PARTNERSHIPS";
 $infoDB->en->menu->orcamentos = "QUOTE REQUEST";
 $infoDB->en->menu->contactos = "CONTACTS";
 $infoDB->en->menu->colaboradores = "LINGUISTS";
@@ -120,6 +123,7 @@ $infoDB->en->qfazemos_area->text13 = 'Software';
 $infoDB->en->qfazemos_area->text14 = 'CERTIFIED TRANSLATION';
 $infoDB->en->qfazemos_area->text15 = ' In order for translations to be legally valid in Portugal, they must be certified before entities with authentication and notarial powers.';
 $infoDB->en->qfazemos_area->text16 = "At Gibberish, certification is carried out before lawyers and the Attorney General's Office (PGR).";
+$infoDB->en->qfazemos_area->text17 = 'We provide professional translation and proofreading services, from and to every language, in several areas:';
 
 $infoDB->en->parcerias_area = (object) 'parcerias_area';
 $infoDB->en->parcerias_area->title = 'PARTNERSHIPS';
@@ -151,6 +155,7 @@ $infoDB->en->orcamento_area->text19 = 'with script';
 $infoDB->en->orcamento_area->text20 = 'size';
 $infoDB->en->orcamento_area->text21 = 'minutes';
 $infoDB->en->orcamento_area->text22 = 'SEND';
+$infoDB->pt->orcamento_area->text23 = 'Estilo de tradução:';
 
 $infoDB->en->colaboradores_area = (object) 'colaboradores_area';
 $infoDB->en->colaboradores_area->title = 'LINGUISTS';
@@ -160,6 +165,7 @@ $infoDB->en->colaboradores_area->password = 'PASSWORD';
 $infoDB->en->contactos_area = (object) 'contactos_area';
 $infoDB->en->contactos_area->title = 'CONTACTS';
 $infoDB->en->contactos_area->text1 = 'For personalised quote requests and CV submission:';
+$infoDB->en->contactos_area->text2 = 'Morada';
 
 
 //// GERMAN ////
@@ -168,7 +174,7 @@ $infoDB->de = (object) 'lang';
 $infoDB->de->menu = (object) 'menu';
 $infoDB->de->menu->quemsomos = "WER WIR SIND";
 $infoDB->de->menu->oquefazemos = "WAS WIR MACHEN";
-$infoDB->de->menu->parcerias = "PARTNERSCHAFTEN / KUNDEN";
+$infoDB->de->menu->parcerias = "PARTNERSCHAFTEN";
 $infoDB->de->menu->orcamentos = "BITTE UM KOSTENVORANSCHLAG";
 $infoDB->de->menu->contactos = "KONTAKTE";
 $infoDB->de->menu->colaboradores = "MITARBEITER";
@@ -203,9 +209,11 @@ $infoDB->de->qfazemos_area->text13 = 'Software';
 $infoDB->de->qfazemos_area->text14 = 'BEGLAUBIGTE ÜBERSETZUNGEN';
 $infoDB->de->qfazemos_area->text15 = 'Um in Portugal rechtsgültig zu sein, muss eine Übersetzung in einer entsprechenden Behörde beglaubigt werden.';
 $infoDB->de->qfazemos_area->text16 = "Gibberish lässt die Übersetzungen bei Anwälten und bei der Staatsanwaltschaft beglaubigen.";
+$infoDB->de->qfazemos_area->text17 = 'Wir bieten professionelle Übersetzungs- und Korrekturdienste, von und in alle Sprachen, in verschiedenen Bereichen:';
+$infoDB->de->orcamento_area->text23 = 'Estilo de tradução:';
 
 $infoDB->de->parcerias_area = (object) 'parcerias_area';
-$infoDB->de->parcerias_area->title = 'PARTNERSCHAFTEN / KUNDEN';
+$infoDB->de->parcerias_area->title = 'PARTNERSCHAFTEN';
 
 
 $infoDB->de->orcamento_area = (object) 'orcamento_area';
@@ -243,13 +251,14 @@ $infoDB->de->colaboradores_area->password = 'PASSWORD';
 $infoDB->de->contactos_area = (object) 'contactos_area';
 $infoDB->de->contactos_area->title = 'KONTAKTE';
 $infoDB->de->contactos_area->text1 = 'Für Bitten um persönlichen Kostenvoranschlag und Zusendung des CV:';
+$infoDB->de->contactos_area->text2 = 'Morada';
 
 //////// FRANCES //////////////
 $infoDB->fr = (object) 'lang';
 $infoDB->fr->menu = (object) 'menu';
 $infoDB->fr->menu->quemsomos = "QUI SOMMES-NOUS";
 $infoDB->fr->menu->oquefazemos = "LES SERVICES QUE NOUS PROPOSONS";
-$infoDB->fr->menu->parcerias = "PARTENARIATS / CLIENTS";
+$infoDB->fr->menu->parcerias = "PARTENARIATS";
 $infoDB->fr->menu->orcamentos = "DEMANDE DE DEVIS";
 $infoDB->fr->menu->contactos = "CONTACTS";
 $infoDB->fr->menu->colaboradores = "COLLABORATEURS";
@@ -284,9 +293,10 @@ $infoDB->fr->qfazemos_area->text13 = 'Logiciels';
 $infoDB->fr->qfazemos_area->text14 = 'TRADUCTION ASSERMENTÉE';
 $infoDB->fr->qfazemos_area->text15 = "Au Portugal, pour qu'une traduction ait valeur légale, il est nécessaire de la certifier auprès d'un organisme compétent.";
 $infoDB->fr->qfazemos_area->text16 = "Dans le cas de Gibberish, les traductions sont certifiées auprès d'avocats et du parquet général.";
+$infoDB->fr->qfazemos_area->text17 = 'Nous proposons nos services de traduction et de révision professionnelle, de et vers toute langue étrangère, dans plusieurs domaines :';
 
 $infoDB->fr->parcerias_area = (object) 'parcerias_area';
-$infoDB->fr->parcerias_area->title = 'PARTENARIATS / CLIENTS';
+$infoDB->fr->parcerias_area->title = 'PARTENARIATS';
 
 $infoDB->fr->orcamento_area = (object) 'orcamento_area';
 $infoDB->fr->orcamento_area->title = 'DEMANDE DE DEVIS';
@@ -314,6 +324,7 @@ $infoDB->fr->orcamento_area->text19 = 'avec script';
 $infoDB->fr->orcamento_area->text20 = 'dimension';
 $infoDB->fr->orcamento_area->text21 = 'minutes';
 $infoDB->fr->orcamento_area->text22 = 'ENVOYER';
+$infoDB->fr->orcamento_area->text23 = 'Estilo de tradução:';
 
 $infoDB->fr->colaboradores_area = (object) 'colaboradores_area';
 $infoDB->fr->colaboradores_area->title = 'TRADUCTEURS';
@@ -323,6 +334,7 @@ $infoDB->fr->colaboradores_area->password = 'MOT DE PASSE';
 $infoDB->fr->contactos_area = (object) 'contactos_area';
 $infoDB->fr->contactos_area->title = 'CONTACTS';
 $infoDB->fr->contactos_area->text1 = 'Pour des demandes de devis personnalisés et envoi de CV :';
+$infoDB->fr->contactos_area->text2 = 'Morada';
 
 //////// ESPANHOL //////////////
 
@@ -330,7 +342,7 @@ $infoDB->es = (object) 'lang';
 $infoDB->es->menu = (object) 'menu';
 $infoDB->es->menu->quemsomos = "¿QUIÉNES SOMOS?";
 $infoDB->es->menu->oquefazemos = "¿QUÉ HACEMOS?";
-$infoDB->es->menu->parcerias = "SOCIOS/CLIENTES";
+$infoDB->es->menu->parcerias = "SOCIOS";
 $infoDB->es->menu->orcamentos = "PEDIDO DE PRESUPUESTO";
 $infoDB->es->menu->contactos = "CONTACTOS";
 $infoDB->es->menu->colaboradores = "EQUIPO";
@@ -365,9 +377,10 @@ $infoDB->es->qfazemos_area->text13 = 'Software';
 $infoDB->es->qfazemos_area->text14 = 'TRADUCCIÓN CERTIFICADA';
 $infoDB->es->qfazemos_area->text15 = 'En Portugal, para que una traducción tenga validez legal, es necesario que se certifique a través de organismos con competencia para tal efecto.';
 $infoDB->es->qfazemos_area->text16 = 'En el caso de Gibberish, lo hacemos con abogados y la Procuraduría General de la Nación.';
+$infoDB->es->qfazemos_area->text17 = 'Ofrecemos servicios de traducción y revisión profesional, de y para cualquier lengua, en diversas áreas. ';
 
 $infoDB->es->parcerias_area = (object) 'parcerias_area';
-$infoDB->es->parcerias_area->title = 'SOCIOS/CLIENTES';
+$infoDB->es->parcerias_area->title = 'SOCIOS';
 
 $infoDB->es->orcamento_area = (object) 'orcamento_area';
 $infoDB->es->orcamento_area->title = 'PEDIDO DE PRESUPUESTO';
@@ -395,6 +408,7 @@ $infoDB->es->orcamento_area->text19 = 'con guion';
 $infoDB->es->orcamento_area->text20 = 'tamaño';
 $infoDB->es->orcamento_area->text21 = 'minutos';
 $infoDB->es->orcamento_area->text22 = 'ENVIAR';
+$infoDB->es->orcamento_area->text23 = 'Estilo de tradução:';
 
 $infoDB->es->colaboradores_area = (object) 'colaboradores_area';
 $infoDB->es->colaboradores_area->title = 'EQUIPO';
@@ -404,6 +418,7 @@ $infoDB->es->colaboradores_area->password = 'CONTRASEÑA';
 $infoDB->es->contactos_area = (object) 'contactos_area';
 $infoDB->es->contactos_area->title = 'CONTACTOS';
 $infoDB->es->contactos_area->text1 = 'Para solicitar presupuesto personalizado y envío de CV:';
+$infoDB->es->contactos_area->text2 = 'Morada';
 
 
 //////////////// CHINA  ////////////////////
@@ -427,7 +442,7 @@ $infoDB->ch->quemsomos_area->title = '关于我们';
 $infoDB->ch->quemsomos_area->text1 = ' 难以理解的胡言乱语';
 $infoDB->ch->quemsomos_area->text2 = '上文下理不通的语言';
 $infoDB->ch->quemsomos_area->text3 = '我们的翻译公司….';
-$infoDB->ch->quemsomos_area->text4 = '为三位致力于提供高品质的服务和管理、经验丰富的专业人员所创立和管理。我们所喜欢的轻松的工作氛围和小型团队模式让我们获得巨大的灵活性，但我们仍然坚守我们队客户的承诺并专业的工作态度和资格。我们的目标是打破语言上的障碍。异国语言、紧迫的死线或难度高的题材对我们团队来说并不会难题。难度越高的挑战越让我们感兴趣！';
+$infoDB->ch->quemsomos_area->text4 = '为三位致力于提供高品质的服务和管理、经验丰富的专业人员所创立和管理。我们所喜欢的轻松的工作氛围和小型团队模式让我们获得巨大的灵活性，但我们仍然坚守我们队客户的承诺并专业的工作态度和资格。我们的目标是打破语言上的障碍。异国语言、紧迫的死线或难度高的题材对我们团队来说并不会是个难题。难度越高的挑战越让我们感兴趣！';
 
 $infoDB->ch->qfazemos_area = (object) 'qfazemos_area';
 $infoDB->ch->qfazemos_area->title = '我们的工作';
@@ -447,13 +462,14 @@ $infoDB->ch->qfazemos_area->text13 = '软件';
 $infoDB->ch->qfazemos_area->text14 = '认证翻译';
 $infoDB->ch->qfazemos_area->text15 = '如需令翻译文案于葡萄牙具有法律效力，则需使用能提供认证翻译服务的公司或机构为您的文件作出认证翻译。';
 $infoDB->ch->qfazemos_area->text16 = 'Gibberish 会与其法律团队及葡国的总检察长办公室一同提供此服务。';
+$infoDB->ch->qfazemos_area->text17 = '我们在各个领域提供所有语言的专业翻译和校订服务：';
 
 $infoDB->ch->parcerias_area = (object) 'parcerias_area';
-$infoDB->ch->parcerias_area->title = 'PARCERIAS';
+$infoDB->ch->parcerias_area->title = '合作伙伴';
 
 $infoDB->ch->orcamento_area = (object) 'orcamento_area';
 $infoDB->ch->orcamento_area->title = '报价咨询';
-$infoDB->ch->orcamento_area->textnome = 'NOME';
+$infoDB->ch->orcamento_area->textnome = '名称';
 $infoDB->ch->orcamento_area->textemail = '电邮';
 $infoDB->ch->orcamento_area->text1 = '源语言';
 $infoDB->ch->orcamento_area->text2 = '目标语言';
@@ -477,6 +493,7 @@ $infoDB->ch->orcamento_area->text19 = '能提供脚本';
 $infoDB->ch->orcamento_area->text20 = '时长';
 $infoDB->ch->orcamento_area->text21 = '分钟';
 $infoDB->ch->orcamento_area->text22 = '寄出';
+$infoDB->ch->orcamento_area->text23 = '风格转换:';
 
 $infoDB->ch->colaboradores_area = (object) 'colaboradores_area';
 $infoDB->ch->colaboradores_area->title = '合作者';
@@ -486,6 +503,7 @@ $infoDB->ch->colaboradores_area->password = '密码';
 $infoDB->ch->contactos_area = (object) 'contactos_area';
 $infoDB->ch->contactos_area->title = '联系我们';
 $infoDB->ch->contactos_area->text1 = '如欲获得个性化报价，或发送个人简历，请电邮至：';
+$infoDB->ch->contactos_area->text2 = 'Morada';
 
 /////////////////// ARABE //////////////////
 $infoDB->ar = (object) 'lang';
@@ -527,6 +545,8 @@ $infoDB->ar->qfazemos_area->text13 = 'البرامج';
 $infoDB->ar->qfazemos_area->text14 = 'ترجمة معتمدة';
 $infoDB->ar->qfazemos_area->text15 = 'في البرتغال، كي تكون الترجمة صحيحة من الناحية القانونية، فإنه يتطلب أن تكون معتمدة من قبل كيانات ذات صلاحيات للقيام بذلك.';
 $infoDB->ar->qfazemos_area->text16 = 'باللغة التقنية، إننا نقوم بها أمام المحامين ومكتب النائب العام (PGR).';
+$infoDB->ar->qfazemos_area->text17 = '我们在各个领域提供所有语言的专业翻译和校订服务：';
+
 
 $infoDB->ar->parcerias_area = (object) 'parcerias_area';
 $infoDB->ar->parcerias_area->title = 'الشركاء / العملاء';
@@ -557,6 +577,7 @@ $infoDB->ar->orcamento_area->text19 = 'مع نص مكتوب';
 $infoDB->ar->orcamento_area->text20 = 'الحجم';
 $infoDB->ar->orcamento_area->text21 = 'دقائق';
 $infoDB->ar->orcamento_area->text22 = 'إرسال';
+$infoDB->ar->orcamento_area->text23 = 'Estilo de tradução:';
 
 $infoDB->ar->colaboradores_area = (object) 'colaboradores_area';
 $infoDB->ar->colaboradores_area->title = 'اللغويين';
@@ -566,6 +587,7 @@ $infoDB->ar->colaboradores_area->password = 'كلمة المرور';
 $infoDB->ar->contactos_area = (object) 'contactos_area';
 $infoDB->ar->contactos_area->title = 'جهات الاتصال';
 $infoDB->ar->contactos_area->text1 = 'للحصول على أسعار مخصصة وإرسال سيرتك الذاتية:';
+$infoDB->ar->contactos_area->text2 = 'Morada';
 
 
 /////////////////// ITALIANO //////////////////
@@ -574,7 +596,7 @@ $infoDB->it = (object) 'lang';
 $infoDB->it->menu = (object) 'menu';
 $infoDB->it->menu->quemsomos = "CHI SIAMO";
 $infoDB->it->menu->oquefazemos = "COSA FACCIAMO";
-$infoDB->it->menu->parcerias = "PARTNERSHIP / CLIENTI";
+$infoDB->it->menu->parcerias = "PARTNERSHIP";
 $infoDB->it->menu->orcamentos = "RICHIESTA QUOTAZIONE";
 $infoDB->it->menu->contactos = "CONTATTI";
 $infoDB->it->menu->colaboradores = "COLLABORATORI";
@@ -609,9 +631,10 @@ $infoDB->it->qfazemos_area->text13 = 'Software';
 $infoDB->it->qfazemos_area->text14 = 'TRADUZIONE CERTIFICATA';
 $infoDB->it->qfazemos_area->text15 = 'Affinché le traduzioni siano legalmente valide in Portogallo, esse devono essere certificate presso gli enti preposti con autenticazione e poteri notarili.';
 $infoDB->it->qfazemos_area->text16 = 'In Gibberish, la certificazione è svolta davanti agli avvocati e alla Procura Generale della Repubblica (PGR).';
+$infoDB->it->qfazemos_area->text17 = 'Offriamo servizi professionali di traduzione e rilettura, da e verso qualsiasi lingua, in diverse aree:';
 
 $infoDB->it->parcerias_area = (object) 'parcerias_area';
-$infoDB->it->parcerias_area->title = 'PARTNERSHIP / CLIENTI';
+$infoDB->it->parcerias_area->title = 'PARTNERSHIP';
 
 $infoDB->it->orcamento_area = (object) 'orcamento_area';
 $infoDB->it->orcamento_area->title = 'RICHIESTA QUOTAZIONE';
@@ -639,6 +662,7 @@ $infoDB->it->orcamento_area->text19 = 'con testo';
 $infoDB->it->orcamento_area->text20 = 'dimensioni';
 $infoDB->it->orcamento_area->text21 = 'minuti';
 $infoDB->it->orcamento_area->text22 = 'INVIA';
+$infoDB->it->orcamento_area->text23 = 'Estilo de tradução:';
 
 $infoDB->it->colaboradores_area = (object) 'colaboradores_area';
 $infoDB->it->colaboradores_area->title = 'COLLABORATORI';
@@ -648,6 +672,7 @@ $infoDB->it->colaboradores_area->password = 'PASSWORD';
 $infoDB->it->contactos_area = (object) 'contactos_area';
 $infoDB->it->contactos_area->title = 'CONTATTI';
 $infoDB->it->contactos_area->text1 = 'Per richiesta di quotazioni personalizzate e invio di CV:';
+$infoDB->it->contactos_area->text2 = 'Morada';
 
 
 ?>

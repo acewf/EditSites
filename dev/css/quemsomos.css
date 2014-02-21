@@ -56,9 +56,9 @@
 }
 .QuemSomos .centraConteudo .smalltxt_quemsomos{
     color: #fff;
-    font-family: 'GothamRoundedLight';
+    font-family: 'GothamRoundedBold';
     font-weight: normal;
-    font-size: 1em;
+    font-size: 0.91em;
     width: 600px;
     height: 100%;
     margin-top: 30px;
@@ -66,9 +66,8 @@
 }
 .QuemSomos .centraConteudo .bigtxt_quemsomos{
     color: #fff;
-    font-family: 'GothamRoundedLight';
-    font-weight: normal;
-    font-size: 1em;
+    font-family: 'GothamRoundedBold';
+    font-size: 0.91em;
     width: 600px;
     height: 100%;
     margin-top: 30px;
